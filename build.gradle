@@ -48,9 +48,9 @@ configure(subprojects - project(":tests:gdx-tests-android")) {
     }
 }
 
-ant.importBuild("fetch.xml") { antTargetName ->
-    "ant-task-" + antTargetName    
-}
+//ant.importBuild("fetch.xml") { antTargetName ->
+//    "ant-task-" + antTargetName
+//}
 task fetchNatives(dependsOn: "ant-task-all"){
     doLast {
     }
